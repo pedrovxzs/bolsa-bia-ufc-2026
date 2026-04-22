@@ -26,4 +26,4 @@ print("\n                         --- Métricas ---")
 print(dados)
  
 # transformando os dados em um arquivo CSV para análise posterior
-dados.to_csv('metricas_base.csv')
+dados.to_csv('resultados/metricas_base.csv')
