@@ -1,0 +1,12 @@
+# Acompanhamento de análise de dados - bolsa bia (UFC)
+
+Este repositório foi criado para organizar e registrar o progresso das análises de dados desenvolvidas durante minha **Bolsa de Iniciação Acadêmica (BIA)** no projeto de **Formação de apicultores cearenses com ferramentas tecnológicas desenvolvidas para da apicultura e precisão no semiárido** na Universidade Federal do Ceará.
+
+## 🐝 Sobre o projeto
+O trabalho consiste no suporte técnico à pesquisa de mestrado realizada no apiário da ufc, sob orientação do **prof. Rafael Braga**. a pesquisa foca no monitoramento de ninhos de abelhas para entender como o microclima interno (temperatura e umidade) é mantido pelas larvas e pela estrutura do ninho.
+
+## 🎯 Objetivo do repositório
+Este espaço servirá para:
+* Documentar o tratamento dos dados brutos coletados pelos sensores.
+* Registrar a evolução dos scripts de análise.
+* Centralizar as visualizações e métricas geradas para discussão com a equipe de pesquisa.
