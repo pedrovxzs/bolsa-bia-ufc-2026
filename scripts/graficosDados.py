@@ -52,7 +52,7 @@ for col in colunas_sensores:
     
     # formatando o eixo x para mostrar apenas o dia e mês
     ax = plt.gca()
-    ax.set_xlim(df['DataHora'].min(), df['DataHora'].max())
+    ax.set_xlim(df['DataHora'].min() - pd.Timedelta(hours=15), df['DataHora'].max())
     ax.xaxis.set_major_formatter(mdates.DateFormatter('%d/%m'))
     ax.xaxis.set_major_locator(mdates.DayLocator(interval=1))
 
@@ -61,7 +61,7 @@ for col in colunas_sensores:
     
     
     # ajustando layout para evitar sobreposição de elementos
-    plt.tight_layout()
+   # plt.tight_layout()
     
     # salvando o gráfico e nomeando com base no nome da coluna 
     nome_arquivo = f"resultados/grafico_{col.replace(' ', '_').replace('(', '').replace(')', '')}.png"
