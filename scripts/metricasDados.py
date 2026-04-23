@@ -1,7 +1,11 @@
 import pandas as pd
+import os
+
+# Garante que a pasta resultados existe
+os.makedirs('resultados', exist_ok=True)
 
 # ler os dados do arquivo CSV
-df = pd.read_csv('data/leiturasCartao2.csv')
+df = pd.read_csv('dados/leiturasCartao2.csv')
 
 # convertendo a coluna de data para o formato datetime e garantindo que o dia seja interpretado corretamente conforme o formato brasileiro (dd/mm/yyyy)
 df['DataHora'] = pd.to_datetime(df['DataHora'], dayfirst=True)
