@@ -30,7 +30,7 @@ def gerar_grafico_comparativo(colunas, titulo_principal, label_y, nome_arquivo):
     plt.figure(figsize=(12, 6))
     
     for col in colunas:
-        plt.plot(df['DataHora'], df[col].rolling(window=12,center=True).mean(), label=mapa_legendas.get(col, col), linewidth=1)
+        plt.plot(df['DataHora'], df[col].rolling(window=360,center=True).mean(), label=mapa_legendas.get(col, col), linewidth=1)
 
     # customização do gráfico
     plt.title(titulo_principal, fontsize=14)
